@@ -26,7 +26,8 @@ defmodule DatsiBot.MixProject do
       {:html5ever, "~> 0.7.0"},
       {:tesla, "~> 1.2.1"},
       {:ex_gram, "~> 0.6"},
-      {:jason, "~> 1.1"}
+      {:jason, "~> 1.1"},
+      {:redix, ">= 0.0.0"}
     ]
   end
 end
