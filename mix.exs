@@ -24,7 +24,9 @@ defmodule DatsiBot.MixProject do
     [
       {:floki, "~> 0.20.0"},
       {:html5ever, "~> 0.7.0"},
-      {:tesla, "~> 1.2.1"}
+      {:tesla, "~> 1.2.1"},
+      {:ex_gram, "~> 0.6"},
+      {:jason, "~> 1.1"}
     ]
   end
 end

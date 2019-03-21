@@ -6,10 +6,11 @@ defmodule DatsiBot.Application do
   use Application
 
   def start(_type, _args) do
-    # List all child processes to be supervised
+    token = ExGram.Config.get(:ex_gram, :token)
+
     children = [
-      # Starts a worker by calling: DatsiBot.Worker.start_link(arg)
-      # {DatsiBot.Worker, arg}
+      ExGram,
+      {DatsiBot.Bot, [method: :polling, token: token]}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
