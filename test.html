@@ -1,0 +1,738 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<HEAD>
+   <title>Arquitectura de Computadores (Grado II)</title>
+
+   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+   <link rel="stylesheet" href="estilo.css">
+</HEAD>
+
+<BODY>
+<DIV id=iconos>
+<a HREF="https://www.upm.es"><IMG SRC="/icons/logo_upm.png" alt=""  HEIGHT=70></a>
+<a HREF="https://www.fi.upm.es"><IMG SRC="/icons/logo_fi.png" alt="" HEIGHT=70></a>
+<!--<a HREF="../"><IMG SRC="/icons/datsi_small.gif" alt="" HEIGHT=50 ></a>-->
+<a HREF="https://www.datsi.fi.upm.es"><IMG SRC="/icons/datsi_small.gif" alt="" HEIGHT=50 ></a>
+</DIV>
+
+<DIV id=Asignatura>
+<h1 align="center">Arquitectura de Computadores: 2018-2019
+<!-- <p style="color:#FF0000";>(¡¡ Página en preparación !!)</p> -->
+ </h1>
+
+<h3 align="center"><a href="https://www.fi.upm.es/?id=gradoingenieriainformatica">Grado en Ingeniería
+Informática</a>
+</h3>
+</DIV>
+
+<div align="center" style="font-size:12pt">
+<a href="https://www.upm.es//comun_gauss/publico/guias/2018-19/2S/GA_10II_105000027_2S_2018-19.pdf">Guía de Aprendizaje</a>
+</div>
+ 
+<div id=datosAsignatura>
+<table>
+   <tr>
+     <td class="datosUno"><b>Curso:</b></td>
+     <td class="datosDos">Segundo</td>
+   </tr>
+   <tr>
+      <td class="datosUno"><b>Semestre:</b></td>
+      <td class="datosDos"> Cuarto </td>
+    </tr>
+   <tr>
+      <td class="datosUno"><b>Creditos:</b></td>
+      <td class="datosDos"> 6 ECTS </td>
+    </tr>
+
+    <tr>
+      <td class="datosUno"><b>Coordinadora:&nbsp;&nbsp;</b> </td>
+      <td class="datosDos"> <a href="mailto:mgarcia@fi.upm.es">Mª Isabel García Clemente</a> </td>
+    </tr>
+</table>
+</div>
+
+
+<hr>
+<div id= MiPagina>
+<div class="topmenu">
+<a HREF="#TEMARIO">Temario</a>
+<a HREF="#BIBLIOGRAFIA">Bibliografía</a>
+<a href="#MATERIAL-DOCENTE">Material docente</a>
+<a HREF="#PRACTICAS">Prácticas</a>
+<a HREF="#PROYECTO">Proyecto</a>
+<a HREF="/Practicas/">Gestor de Prácticas</a>
+<a HREF="#NORMAS">Evaluación y Normas</a>
+<a HREF="#PLANIFICACION">Planificación</a>
+<a HREF="/docencia/tutorias.html">Tutorías</a>
+<a HREF="/cgi-bin/notas.cgi">Calificaciones</a>
+</div>
+
+<div class=contenido>
+<h2> Descripción</h2>
+<p>En esta asignatura se completa el estudio de los componentes del computador,
+iniciado en Estructura de Computadores, y se abordan las técnicas que utilizan los
+sistemas actuales para obtener altas prestaciones mediante la explotación de
+paralelismo.</p>
+
+<p>El objetivo general es comprender cómo funciona un computador actual y cómo algunas
+decisiones de diseño influyen en gran medida en el rendimiento de las aplicaciones
+así como de los sistemas informáticos.</p>
+
+<p>Se tratan cuatro grandes temas: el sistema de entrada/salida, que permite la
+comunicación del computador con los dispositivos periféricos, el funcionamiento
+de la jerarquía de memoria, centrándonos fundamentalmente en el nivel de memoria
+caché y en el mecanismo de memoria virtual, las técnicas de paralelismo interno
+que permiten que el procesador pueda ejecutar varias instrucciones
+por ciclo, y finalmente se presenta una panorámica general de los
+sistemas multiprocesador y de sus características básicas.</p>
+
+
+<p>La parte teórica de la asignatura se complementa con un proyecto y tres prácticas optativas
+cuyo objetivo es afianzar y profundizar en los contenidos teóricos tratados.</p>
+
+<hr size="2" noshade>
+
+<h2><A NAME="TEMARIO"></A>Temario</h2>
+
+<h4 class="tema">1.- Entrada/Salida</h4>
+<UL>
+<LI>Introducción y módulos de Entrada/Salida</LI>
+<LI>Instrucciones de Entrada/Salida </LI>
+<LI>Técnicas de Entrada/Salida:
+  <UL>
+  <LI>Entrada/Salida programada</LI>
+  <LI>Entrada/Salida por interrupciones</LI>
+  <LI>Entrada/Salida por DMA</LI>
+  </UL>
+ </LI>
+</UL>
+
+<P class="profes"><em>Profesores:&nbsp;</em>
+<A HREF="mailto:lgomez@fi.upm.es">Luis M. Gómez Henríquez</A>,
+<A HREF="mailto:mnieto@fi.upm.es">Manuel Nieto Rodríguez</A>,
+<A HREF="mailto:pedraza@fi.upm.es">Jose Luis Pedraza Domínguez</A> y
+<A HREF="mailto:jzamora@fi.upm.es">Juan Zamorano Flores</A>.
+</P>
+
+<h4 class="tema">2.- Sistema de Memoria</h4>
+
+<UL>
+<LI>Introducción. Jerarquía de Memorias</LI>
+<LI>Memorias caché
+  <UL>
+  <LI>Políticas de ubicación, extracción, reemplazo y escritura</LI>
+  <LI>Unicidad y homogeneidad. Minimización de tiempos de espera. Cachés multinivel</LI>
+  </UL>
+</LI>
+<LI>Memoria principal. Organización entrelazada</LI>
+<LI>Memoria virtual
+  <UL>
+  <LI>Traducción de direcciones. Paginación, segmentación y segmentación paginada</LI>
+  <LI>Mecanismos para la aceleración de la traducción </LI>
+  </UL>
+</LI>
+<LI>Integración memoria virtual y memoria caché</LI>
+</UL>
+
+<P class="profes"><em>Profesores&nbsp;</em>
+<A HREF="mailto:mgarcia@fi.upm.es">Mª Isabel García Clemente</A>,
+<A HREF="mailto:dopico@fi.upm.es">Antonio García Dopico</A> y
+<A HREF="mailto:jzamora@fi.upm.es">Juan Zamorano Flores</A>.
+</P>
+
+<h4 class="tema">3.- Procesadores ILP</h4>
+<UL>
+<LI><em>Pipeline</em> de instrucciones
+  <UL>
+  <LI>Dependencias estructurales y de datos</LI>
+  <LI>Dependencias de control</LI>
+  </UL>
+</LI>
+<LI>Operaciones multiciclo. Dependencias falsas. Tratamiento preciso de excepciones</LI>
+<LI>Procesadores superescalares y VLIW. <em>Multithreading</em></LI>
+</UL>
+
+<P class="profes"><em>Profesores&nbsp;</em>
+<A HREF="mailto:mgarcia@fi.upm.es">Mª Isabel García Clemente</A>,
+<A HREF="mailto:dopico@fi.upm.es">Antonio García Dopico</A> y
+<A HREF="mailto:pedraza@fi.upm.es">José Luis Pedraza Domínguez</A>.
+</P>
+
+<h4 class="tema">4.- Multiprocesadores</h4>
+
+<UL>
+<LI>Evaluación de Prestaciones. Ley de Amdahl. Ganancia. <em>Benchmarks</em> y SPECs</LI>
+<LI>Introducción a las arquitecturas de altas prestaciones.
+    Clasificación. Clusters. Sistemas multicore. GPUs.</LI>
+<LI>Soporte hardware para Multiprocesadores. Memoria entrelazada.
+    Sincronización. Jerarquía de Memorias.</LI>
+<LI>Memorias caché en sistemas multiprocesador. Coherencia de cachés</LI>
+</UL>
+
+<P class="profes"><em>Profesores&nbsp;</em>
+<A HREF="mailto:mgarcia@fi.upm.es">Mª Isabel García Clemente</A>,
+<A HREF="mailto:lgomez@fi.upm.es">Luis M. Gómez Henríquez</A> y
+<A HREF="mailto:pedraza@fi.upm.es">José Luis Pedraza Domínguez</A>.
+</P>
+<hr size="2" noshade>
+
+<h2><A NAME="BIBLIOGRAFIA"></A>Bibliografía</h2>
+
+<UL>
+<LI>Baer, J.L.  <I>Microprocessor Architecture. From simple pipelines to chip
+multiprocessors.</I> Cambridge University Press 2010.</LI>
+
+<LI>Bryant, R.E.; O'Hallaron, D.R.  <I>Computer Systems. A programmer's perspective.</I>
+Pearson 2011.</LI>
+
+<LI>García Clemente, M.I.
+<a href="./privado/SistemaDeMemoria.pdf">Sistema de Memoria</a>. Facultad de Informática, 2016.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+<img alt="Licencia de Creative Commons" style="border-width:0"
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a>
+</LI>
+
+<LI>García Clemente y otros. <I>Estructura de computadores. Problemas resueltos.
+</I> RAMA, 2006. 1ª edición.</LI>
+
+<LI>Hennessy, J.L.; Patterson, D. A.
+<I>Computer Architecture: A quantitative Approach.</I>
+Morgan-Kaufmann. 2007. 4ª edición. Disponible 
+<a href="privado/Hennessy_Chapter_1.pdf">Capítulo 1</a> de la 5ª edición</LI>
+
+<LI>Patterson, D. A.; Hennessy, J. L. <I>Estructura y diseño de Computadores.</I>
+Ed. Reverte 2011. 4ª edición.</LI>
+
+<LI>Stallings, W. <I>Computer Organization and Architecture.</I> Pearson, 8th edición. 2010.</LI>
+</UL>
+<hr size="2" noshade>
+
+<h2><A NAME="MATERIAL-DOCENTE"></A>Material docente</h2>
+<p>Se encuentra disponible el siguiente material (solo ETSIInf de la UPM):
+
+<h4 class="tema">Tema 1.- Entrada/Salida</h4>
+<UL>
+<li><a href="privado/E_S_AC_GII_Enero2017.pdf">Presentación</a>.</li>
+<li><a href="privado/AC09colprobsES-feb2015.pdf">Enunciados de ejercicios</a>.</li>
+<li><a href="privado/AC09colpreguntasexaES-feb2015.pdf">Enunciados de cuestiones
+de teoría</a>.</li>
+<li><a href="privado/ac_Rparc1_junio_2016_sol.pdf">Enunciado y solución examen 2016
+</a>.</li>
+<!--
+-->
+</UL>
+
+<h4 class="tema">Tema 2.- Sistema de Memoria</h4>
+<UL>
+<li><a href="privado/AC-SM-Feb2018.pdf">Presentación</a>.</li>
+<li><a href="privado/EjercicioCaches.pdf">Ejercicio Memorias caché</a>.</li>
+<!--
+<li><a href="privado/DiagFlujoCByWT.pdf">Diagramas de flujo de las políticas
+de escritura</a>.</li>
+<li><a href="privado/Enunciado_Fin_Tema.pdf">Enunciado ejercicio final</a>.</li>
+-->
+<li><a href="privado/EjercicioMVirtual.pdf">Ejercicio de Memoria virtual</a>.</li>
+<li><a href="privado/EjemploTPmultinivel.pdf">Ejercicio de tablas de páginas multinivel</a>.</li>
+<li><a href="privado/AC-probs-SM-Feb2019.pdf">Enunciados de ejercicios</a>.</li>
+</UL>
+
+<h4 class="tema">Tema 3.- Procesadores ILP</h4>
+<UL>
+<li><a href="privado/ILPS-Abr18B.pdf">Presentación</a>.</li>
+<li><a href="privado/Enunciados_ILP.pdf">Enunciados de ejercicios</a>.</li>
+<!--
+<li><a href="privado/ilp_7etapas_pred_est.pdf">Enunciado de Problema 7 etapas </a>.</li>
+-->
+<li><a href="privado/Problema7EtapasB.pdf">Resumen de la solución del Problema de 7 etapas </a>.</li>
+</UL>
+
+<h4 class="tema">Tema 4.- Sistemas Multiprocesador</h4>
+<UL>
+<li><a href="privado/AC_tema_MP_17-18.pdf">Presentación</a>.</li>
+<li><a href="privado/prob_MSI.pdf">Enunciado de ejercicio de protocolo
+de coherencia MSI</a>.</li>
+<li><a href="privado/EnunciadosMultis.pdf">Otros enunciados de ejercicios</a>.</li>
+<!--
+<li><a href="privado/Solucion-Prob-4.pdf">Solución al problema 4 de
+los enunciados anteriores</a>.</li>
+-->
+</UL>
+
+<h4 class="tema">Exámenes resueltos de cursos anteriores</h4>
+<!-- SOLO PONEMOS LOS DOS ULTIMOS CURSOS -->
+
+<!--
+<ul>
+<li>Curso 2015-2016
+<ul>
+<li><a href="privado/Exa/15-16/AC_Parc1_Feb16_SOL.pdf">Primer parcial</a> </li>
+<li><a href="privado/Exa/15-16/AC_Parc2_Abr16_SOL.pdf">Segundo parcial</a> </li>
+<li><a href="privado/Exa/15-16/ac_Parc3_jun16_SOL.pdf">Tercer parcial</a> </li>
+<li><a href="privado/Exa/15-16/ac_Rparc1_junio_2016_sol.pdf">Recuperación del primer parcial</a> </li>
+<li><a href="privado/Exa/15-16/ac_Rparc2_junio16_SOL.pdf">Recuperación del segundo parcial</a> </li>
+<li><a href="privado/Exa/15-16/ac_p1_jul16_SOL.pdf">Convocatoria de julio. Primer parcial</a> </li>
+<li><a href="privado/Exa/15-16/ac_p2_jul16_SOL.pdf">Convocatoria de julio. Segundo parcial</a> </li>
+<li><a href="privado/Exa/15-16/ac_p3_jul16_SOL.pdf">Convocatoria de julio. Tercer parcial</a> </li>
+</ul>
+</ul>
+ -->
+
+<ul>
+<li>Curso 2016-2017
+<ul>
+<li><a href="privado/Exa/16-17/AC_parc1_feb17_SOL.pdf">Primer parcial</a> </li>
+<li><a href="privado/Exa/16-17/ac_parc2_Abr_17_SOL_B.pdf">Segundo parcial</a> </li>
+<li><a href="privado/Exa/16-17/ac_parc3_jun17-sol.pdf">Tercer parcial</a> </li>
+<li><a href="privado/Exa/16-17/ac_Rparc1_junio_sol_2017.pdf">Recuperación del primer parcial</a> </li>
+<li><a href="privado/Exa/16-17/AC_Parc2-Rec_Jun17_SOL.pdf">Recuperación del segundo parcial</a> </li>
+<li><a href="privado/Exa/16-17/ac_p1_jul17-sol.pdf">Convocatoria de julio. Primer parcial</a> </li>
+<li><a href="privado/Exa/16-17/ac_p2_jul17-sol.pdf">Convocatoria de julio. Segundo parcial</a> </li>
+<li><a href="privado/Exa/16-17/ac_p3_jul17-sol.pdf">Convocatoria de julio. Tercer parcial</a> </li>
+</ul>
+</ul>
+
+<ul>
+<li>Curso 2017-2018
+<ul>
+<li><a href="privado/Exa/17-18/ac_parc1_feb18_SOL.pdf">Primer parcial</a> </li>
+<li><a href="privado/Exa/17-18/ac_parc2_may18_SOL.pdf">Segundo parcial</a> </li>
+<li><a href="privado/Exa/17-18/ac_parc3_jun18_SOL.pdf">Tercer parcial</a> </li>
+<li><a href="privado/Exa/17-18/ac_Rparc1_jun18_SOL.pdf">Recuperación del primer parcial</a> </li>
+<li><a href="privado/Exa/17-18/ac_Rparc2_jun18_SOL.pdf">Recuperación del segundo parcial</a> </li>
+<li><a href="privado/Exa/17-18/ac_parc1_jul_2018-sol.pdf">Convocatoria de julio. Primer parcial</a> </li>
+<li><a href="privado/Exa/17-18/ac_parc2_jul18_SOL.pdf">Convocatoria de julio. Segundo parcial</a> </li>
+<li><a href="privado/Exa/17-18/ac_parc3_jul18_SOL.pdf">Convocatoria de julio. Tercer parcial</a> </li>
+</ul>
+</ul>
+
+<hr size="2" noshade>
+
+<H2><A NAME="PRACTICAS"></A>Prácticas optativas (en aula informática)</H2>
+
+<OL>
+<LI><B>Práctica de Entrada/Salida</B>
+
+  <p> El objetivo es la toma de contacto con la herramienta utilizada en el Proyecto.
+  En ella se propone la implementación de un manejador de un dispositivo
+  sencillo (línea serie) mediante Entrada/Salida programada.
+  
+  Para ello se utilizará una herramienta de libre distribución (bsvc)
+  para la simulación de procesadores y otros dispositivos.</p>
+  
+  <P class="profes"><em>Profesores:</em> Santiago Rodríguez de la Fuente y Antonio Pérez Ambite
+  <a href="mailto:pr_ent_sal@datsi.fi.upm.es">pr_ent_sal@datsi.fi.upm.es</a></P>
+
+<!-- Descomentar cuando empiece
+-->
+ <em>Para obtener más información sobre esta práctica pulse </em><a href="E_S/">Aquí</a></P>
+
+ </LI>
+
+<LI><B>Práctica de Memorias caché</B>
+
+  <p>El objetivo es estudiar el comportamiento de la jerarquía de
+  memoria con diferentes parámetros y programas. Para conseguir este
+  objetivo el alumno deberá estudiar y optimizar el comportamiento de varios
+  programas respecto a la memoria caché.
+  Se utilizará un simulador del procesador RISC MC88110.</p>
+
+  <P class="profes"><em>Profesores:</em> Mª Isabel García Clemente y Luis M. Gómez Henríquez
+  <a href="mailto:pr_mcache@datsi.fi.upm.es">pr_mcache@datsi.fi.upm.es</a></P>
+
+<!-- Descomentar cuando empiece
+-->
+ <em>Para obtener más información sobre esta práctica pulse </em><a href="Caches/">Aquí</a></P>
+
+ </LI>
+
+<LI><B>Práctica de pipeline de instrucciones</B>
+
+  <p>El objetivo de esta práctica es profundizar en el conocimiento de las
+  particularidades de funcionamiento del <i>pipeline</i> de instrucciones.
+  Se proporciona un simulador para Linux y un programa de ejemplo con el que analizar
+  dicho funcionamiento.</p>
+  
+  <P class="profes"><i>Profesores:</i> Antonio García Dopico y
+  Mª Isabel García Clemente <a href="mailto:pr_ilp@datsi.fi.upm.es">pr_ilp@datsi.fi.upm.es</a></P>
+
+<!-- Descomentar cuando empiece
+ <em>Para obtener más información sobre esta práctica pulse </em><a href="ILPs/">Aquí</a></P>
+-->
+
+</LI>
+</OL>
+
+<hr size="1" noshade>
+<b>Debido a la limitación de horas presenciales de la asignatura,
+las prácticas 2 y 3 <u>no se realizarán en su totalidad en el horario de la
+asignatura</u>, por lo que el alumno deberá inscribirse previamente mediante un
+formulario que se habilitará al efecto.
+
+Las fechas concretas se anunciarán al inicio del semestre en el que se imparte
+esta asignatura en la sección
+<A HREF="#PLANIFICACION">Planificación</A> de esta página</b>.
+<!--
+Las fechas concretas están anunciadas en la sección
+<A HREF="#PLANIFICACION">Planificación</A> de esta página</b>.
+-->
+
+<hr size="2" noshade>
+
+<H2><A NAME="PROYECTO"></A>Proyecto </H2>
+
+<p><B>Entrada/Salida mediante interrupciones</B>
+</p>
+
+El alumno deberá desarrollar un programa ensamblador para realizar
+una operación completa de entrada/salida mediante interrupciones
+vectorizadas. Para ello, deberá inicializar el módulo de entrada/salida
+y la tabla de vectores de interrupción, realizar la rutina de servicio
+de interrupciones y las rutinas de inicialización y finalización
+de la operación.
+
+Se utilizará la misma herramienta de libre distribución (bsvc) que
+en la práctica optativa de Entrada/Salida.
+
+<P class="profes"><em>Profesores:</em> Santiago Rodríguez de la Fuente y Antonio Pérez Ambite
+<a href="mailto:pr_ent_sal@datsi.fi.upm.es">pr_ent_sal@datsi.fi.upm.es</a></P>
+
+<!-- Descomentar cuando empiece
+-->
+<em>Para obtener más información sobre esta práctica pulse </em><a href="Proyecto_E_S/">Aquí</a></P>
+
+<hr size="2" noshade>
+
+<H2><A NAME="NORMAS"></A>Evaluación y Normas</H2>
+
+La asignatura consta de tres partes: teoría, proyecto y prácticas optativas.
+Estas tres partes se evalúan por separado según se detalla en los siguientes
+apartados.
+
+<hr size="1" noshade>
+
+<b>NOTA IMPORTANTE:</b>
+
+<p><b>Para aprobar la asignatura el alumno deberá obtener una calificación mayor o igual a 5
+en la teoría</b>, una nota mayor o igual a 2 en el proyecto <b>y una <A HREF="#CALIF_FINAL">
+nota global</A> mayor o igual a 5</b>.
+<hr size="1" noshade>
+
+<p><b><u><A NAME="NOTA_TEORIA"></A>EVALUACIÓN DE LA PARTE TEÓRICA</u></b></p>
+
+<p>Para los alumnos que al comienzo de curso soliciten evaluación mediante
+<A HREF="#SOLO_FINAL">solo prueba final</A>
+se realizará un examen final en la fecha fijada por Jefatura de
+Estudios.</p>
+
+<ul>
+<li><b><u>Convocatoria Ordinaria:</u></b>
+
+<!-- Poner las semanas concretas cuando empiece el semestre
+<p>Se realizarán tres exámenes parciales. Está previsto que el primero se realice en la
+<b>semana 5</b>, el segundo en la <b>semana 11</b>, y el tercero en el periodo de exámenes,
+en la fecha fijada por Jefatura de Estudios. En el primer parcial se evaluará el tema 1,
+en el segundo el tema 2, y en el tercero los temas 3 y 4.</p>
+-->
+<p>Se realizarán tres exámenes parciales. Los dos primeros se realizarán en el
+periodo de docencia, en las fechas que se anunciarán al inicio del semestre
+y el tercero en el periodo de exámenes, en la fecha fijada por Jefatura de Estudios.
+En el primer parcial se evaluará el tema 1, en el segundo el tema 2, y en el tercero los temas 3 y 4.</p>
+
+<p>La nota de la evaluación por parciales se calculará según la siguiente fórmula:</p>
+
+<center>
+Nota_Parc = 0,3*Nota primer parcial + 0,4 * Nota segundo parcial + 0,4 * Nota tercer parcial
+</center>
+
+<p>Adicionalmente, se permitirá <b>recuperar solo uno de los
+dos primeros parciales</b>. El peso del parcial recuperado será de 0,25 si se recupera el
+primer parcial y 0,35 si se recupera el segundo. En el caso de que un alumno se presente a la
+recuperación de un parcial, <b>se tendrá únicamente en cuenta la nota obtenida en
+este último examen</b>.</p>
+
+<p>Para poder ser evaluado por parciales, el alumno deberá obtener una <b>nota mínima de
+dos puntos sobre 10</b> en cada uno de los parciales o en su recuperación.</p>
+</li>
+
+<li><b><u>Convocatoria Extraordinaria:</u></b>
+
+<p>El examen de la convocatoria extraordinaria constará de tres partes,
+correspondientes a los tres parciales mencionados en el apartado anterior.</p>
+
+<ul>
+<li>Si el alumno <b>no se presenta</b> a alguno de ellos, <b>conservará</b> la calificación y
+peso sobre la nota de teoría que hubiera obtenido en dicho parcial
+en la convocatoria ordinaria.</li>
+
+<li>Si el alumno <b>se presenta</b> a un parcial en esta convocatoria, se tendrá únicamente
+en cuenta la nota obtenida en este último examen, con lo que <b>perderá</b> la que
+hubiera obtenido en la convocatoria ordinaria.</li>
+</ul>
+
+<p>El cálculo de la nota de teoría se realizará teniendo en cuenta que el
+peso de los parciales a los que se presente el alumno será 0,25 para el primero, 0,35 para el
+segundo y 0,4 para el tercero.</p>
+
+<p>Para poder ser evaluado en esta convocatoria, el alumno deberá obtener
+una <b>nota mínima de dos puntos sobre 10</b> en cada uno de los parciales.</p>
+</li>
+</ul>
+
+<p><b><u><A NAME="PRAC_LAB"></A>EVALUACIÓN DE LAS PRÁCTICAS OPTATIVAS </u></b></p>
+
+<p>El alumno <b>solo podrá cursar una vez</b> estas prácticas.
+
+<p>Se evaluarán únicamente las prácticas 2 y 3. Para ello se tendrá en cuenta 
+la asistencia, el resultado de las entregas realizadas por el alumno, y un examen.
+
+<p>La nota de evaluación por parciales (Nota_Parc) podrá incrementarse en un máximo
+de 0,5 puntos, con la realización satisfactoria de ambas prácticas (0,25 por cada una),
+sin sobrepasar los 10 puntos del total. Este incremento se aplicará también
+a la nota de teoría obtenida en la convocatoria extraordinaria.</p>
+
+<p>Si el alumno solicita evaluación mediante <A HREF="#SOLO_FINAL">solo prueba final</A>,
+<b>no podrá cursar</b> estas prácticas.</p>
+
+<p><b><u>EVALUACIÓN DEL PROYECTO </u></b></p>
+ 
+<!-- Poner las semanas concretas cuando empiece el semestre
+<p>Se realizará a partir de los resultados obtenidos por el alumno,
+y de un examen que tendrá lugar en la <b>semana 10</b>,
+una vez finalizado el plazo de entrega del proyecto.
+El alumno que solicite evaluación mediante <A HREF="#SOLO_FINAL">solo prueba
+final</A>, tendrá que realizar el proyecto y su examen
+en las mismas fechas que el resto de los alumnos.</p>
+-->
+<p>Se realizará a partir de los resultados obtenidos por el alumno,
+y de un examen que tendrá lugar durante el periodo de docencia,
+una vez finalizado el plazo de entrega del proyecto,
+en la fecha que se anunciará al inicio del semestre.
+El alumno que solicite evaluación mediante <A HREF="#SOLO_FINAL">solo prueba
+final</A>, tendrá que realizar el proyecto y su examen
+en las mismas fechas que el resto de los alumnos.</p>
+
+<p>Para la convocatoria <b>extraordinaria de Julio</b> se establecerá un nuevo plazo
+de entrega, y se realizará un examen en la fecha fijada por Jefatura de Estudios.</p>
+
+Los plazos de entrega estarán debidamente especificados en la
+documentación del proyecto.
+
+<hr size="1" noshade>
+<p>Las <b>fechas de publicación de notas y revisión presencial</b> se notificarán en el enunciado del
+correspondiente examen.</p>
+
+<b>En las pruebas de evaluación de la asignatura NO SE PODRÁN utilizar calculadoras
+programables, móviles u otros dispositivos electrónicos</b>.</p>
+<hr size="1" noshade>
+
+<p><b><u><A NAME="CALIF_FINAL"></A>CÁLCULO DE LA CALIFICACIÓN FINAL </u></b></p>
+
+<p><b>Para aprobar la asignatura</b> será necesario obtener una calificación <b>mayor o igual a 5
+en la teoría</b>, una nota mayor o igual a 2 en el proyecto y una <b>nota global mayor o igual a
+5</b>, obteniéndose esta según la siguiente fórmula:</p>
+
+<center>
+Nota_global = 0,7*Nota_Teoría + 0,3*Nota_Proyecto
+</center>
+
+<p>donde Nota_Teoría corresponde a la nota obtenida en la evaluación por parciales (Nota_Parc)
+o en la convocatoria extraordinaria de Julio, 
+incrementada en un máximo de 0,5 puntos con la nota de las
+<A HREF="#PRAC_LAB">prácticas optativas</A>.</p>
+
+<p>Para los alumnos que soliciten evaluación mediante <A HREF="#SOLO_FINAL">solo prueba
+final</A>, la Nota_global se calcula siguiendo la misma fórmula anterior, correspondiendo
+la Nota_Teoria a la <A HREF="#NOTA_TEORIA"> nota </A> obtenida en el examen final.</p>
+
+<p><b>En caso de aprobar una parte de la asignatura</b>, pero no la totalidad, se
+<b>conservarán del siguiente modo las calificaciones</b> de las partes superadas:</p>
+  
+<ul>
+<li><p><b>Teoría</b>. 
+Se conservará la nota obtenida en la convocatoria ordinaria, en cada uno de los parciales, <b>hasta la
+convocatoria extraordinaria</b> de Julio. No se conservarán parciales para cursos posteriores.
+Sin embargo, <b>si la nota de teoría (Nota_Teoría) obtenida es mayor o igual a 5</b>,
+se conservará para el siguiente curso académico mientras no cambie el
+contenido teórico de la asignatura.</p></li>
+
+<li><p><b>Prácticas optativas</b>. Las notas obtenidas se conservarán hasta que el alumno
+apruebe la asignatura, con la ponderación que se establezca en cada curso.</p></li>
+
+<li><p><b>Proyecto</b>. Cuando se obtenga una calificación global mayor o igual a 2
+(ejecución, memoria y examen) se conservará para el siguiente curso académico.
+No obstante, el alumno podrá renunciar a la nota obtenida y realizarlo
+de nuevo en su totalidad.</p></li>
+</ul>
+
+<p><b><u>REVISIÓN DE EXÁMENES </u></b></p>
+
+<p>Una vez publicadas las notas de un examen de la asignatura (de teoría
+o proyecto), se abrirá un plazo de solicitud de revisión para aquellos alumnos que
+consideren que existe algún error en la calificación. Esta solicitud se deberá realizar
+conectándose al URL (WEB)
+<A HREF="/docencia/Arquitectura_09/privado/rev_arq.html">
+http://www.datsi.fi.upm.es/docencia/Arquitectura_09/privado/rev_arq.html</a>, donde
+el alumno deberá rellenar los datos que se le requieran y será informado de la
+hora y lugar de la revisión presencial.
+
+<p>Una vez realizada la revisión por los profesores, si se produce algún cambio,
+se publicará una nueva lista de notas revisadas.
+
+Si el alumno desea <b>revisión presencial, deberá hacerlo en la fecha, hora y lugar
+establecidos.</b>
+
+<p>Se recuerda a los alumnos que la revisión de exámenes tiene por objeto
+detectar y subsanar los posibles errores que puedan surgir en el proceso
+de calificación. No se trata de explicar individualmente cómo se resuelve
+el examen ni de variar ni discutir los criterios de corrección para una
+persona determinada.
+
+<p><b><u>PRÁCTICAS, PROYECTOS o EXÁMENES COPIADOS </u></b></p>
+
+<p>Los exámenes se realizarán a nivel personal, y las prácticas y proyecto
+en los grupos establecidos.
+Si se detecta que algún alumno ha copiado en algún examen o algún
+grupo ha copiado en la realización de las prácticas o proyecto, <b>será evaluado
+como suspenso en todas las partes de la asignatura hasta la misma
+convocatoria del curso académico siguiente</b> (excluida).
+<b>Todas las notas obtenidas en la convocatoria en la que se ha detectado copia
+serán invalidadas</b>.<p>
+
+En particular, en el caso de las prácticas y proyectos, se tendrá en cuenta que
+la responsabilidad del trabajo está compartida por todos los miembros del grupo,
+por lo que en caso de detectar alguna copia la norma se aplicará a todos los miembros de
+todos los grupos involucrados en la copia (tanto los que copian como los
+que se dejan copiar). Se entiende por copiar, tanto la utilización de
+información como la de recursos asignados a otro alumno o grupo.
+Para evitar problemas y reclamaciones que no se podrán atender se recomienda
+a los alumnos que sean especialmente cuidadosos con los ficheros que se
+utilicen para la realización de las prácticas o proyectos, puesto que de ello
+depende que el trabajo pueda o no ser copiado. En concreto, utilice siempre
+dispositivos extraíbles cuando trabaje en un PC del Centro de Cálculo
+(no deje los ficheros en el disco duro ni siquiera de forma transitoria),
+haga uso de los mecanismos que proporciona el sistema operativo y asegúrese de
+que los ficheros que están guardados en los sistemas de almacenamiento en red estén protegidos.
+
+
+<p><b><u>
+<A NAME="SOLO_FINAL"></A>SISTEMA DE EVALUACIÓN POR PRUEBA FINAL</u></b></p>
+
+El procedimiento para optar por este sistema estará sujeto a lo que establezca
+Jefatura de Estudios.
+
+<hr size="2" noshade>
+<!--
+<hr size="2" border-style="solid">
+-->
+
+<H2><A NAME="PLANIFICACION"></A>Planificación de prácticas y actividades de evaluación</H2>
+
+En esta sección se anunciarán, al inicio del semestre de impartición de esta
+asignatura, las fechas previstas para la explicación del proyecto, así como para
+la realización de las prácticas y actividades de evaluación.
+<!--
+-->
+En la tabla siguiente puede encontrar las <b>fechas</b> previstas
+para la explicación del Proyecto, y para las <b>prácticas
+y actividades de evaluación</b> de la asignatura.<p>
+Las <b>aulas informáticas en las que se realizará cada práctica</b> se anunciarán
+en la página web correspondiente (<A HREF="#PRACTICAS">Prácticas</A>).<p>
+
+<IMG SRC="PlanificacionParaAlumnos-18-19.jpg" alt="" height=550 width=800>
+
+<hr size="4" noshade>
+<ADDRESS>
+
+Página modificada el  06/03/2019
+</ADDRESS>
+
+<center>
+<a href="#"><button><b>Ir al Principio</b></button></a> 
+</center>
+
+
+</div> <!-- Fin de contenido -->
+
+<!-- NOTICIAS -->
+
+<div class=noticias>
+<h2 align="center">Noticias</h2>
+<ul>
+
+<!-- 
+<LI class="impar"><b>4-Julio-2018.</b> <b>Convocatoria de julio</b>.
+<a href="./AnunciosExams/DistJulio18.pdf">Aquí</a> puede encontrar la
+planificación y lugar donde realizaran las <b>pruebas de evaluación</b>
+correspondientes a esta convocatoria extraordinaria.<p></li>
+
+<LI class="par"><b>7-Junio-2018.</b> <b>Examen del tercer parcial y recuperaciones</b>.
+<a href="./AnunciosExams/DistJunio18.pdf">Aquí</a> puede encontrar la
+ distribución de alumnos por aulas para la realización de este examen, que se realizará el
+día <b>8 de Junio a las 15:00 horas</b>.  Se recuerda que <b>los alumnos DEBEN
+asistir al aula que tienen asignada</b>.<p></li>
+
+<LI class="impar"><b>14-Mayo-2018.</b> El examen de la <b>Práctica de pipeline</b> se realizará
+el día <b>17 de Mayo a las 14:00</b> en el aula 2113.
+Dicho examen lo podrán realizar <b>únicamente</b> los alumnos que hayan asistido
+a alguna de las sesiones presenciales de dicha práctica.<p></li>
+
+<LI class="par"><b>4-Mayo-2018.</b> <b>Examen del segundo parcial</b>.
+<a href="./AnunciosExams/Dist-P2-1718.pdf">Aquí</a> puede encontrar la
+ distribución de alumnos por aulas de este examen, que tendrá lugar
+el <b>7 de Mayo a las 14:00 horas</b>. Se recuerda que <b>los alumnos DEBEN
+asistir al aula que tienen asignada</b>.<p></li>
+
+<LI class="impar"><b>30-Abril-2018.</b> La sesión de la <b>práctica de pipeline de los grupos
+F1M y F1M-B</b>, programada inicialmente para el día 7 de mayo se traslada al <b>8 de mayo de 16 a 18
+</b>. </li>
+
+<LI class="par"><b>26-Abril-2018.</b> La sesión de la <b>práctica de pipeline del grupo F3T</b> programada
+inicialmente para el día 7 de mayo se cambia al <b>14 de mayo de 14 a 16 en la sala Monje</b>. </li>
+
+<LI class="impar"><b>24-Abril-2018.</b> Se ha publicado la convocatoria del <b>examen del Proyecto de E/S</b>
+en la sección de Anuncios de la <a href="Proyecto_E_S/#ANUNCIOS">página</a>
+web del Proyecto.</li>
+
+<LI class="par"><b>23-Abril-2018.</b> <b>Práctica de pipeline</b>.
+Se deberán formar grupos de 2 alumnos como máximo.
+Para <b>dar de alta un grupo</b> pulse
+<a href="./ILPs/grupos_ilps.cgi">aquí</a>.
+
+La <b>fecha límite es el 27 de abril a las 21:00</b>. </li>
+
+<LI class="impar"><b>13-Abril-2018.</b> El examen de la <b>Práctica de memorias caché</b> se realizará
+el día <b>16 de Abril a las 14:00</b> en el aula 2113 (antigua Biblioteca).
+Dicho examen lo podrán realizar <b>únicamente</b> los alumnos que hayan asistido a alguna de
+las sesiones presenciales de dicha práctica.</li>
+
+-->
+<LI class="impar"><b>6-Marzo-2018.</b> <b>Práctica de Memorias caché</b>.
+Se deberán formar grupos de como máximo 2 alumnos.
+Para <b>dar de alta un grupo</b> pulse
+<a href="./Caches/grupos_cache.cgi">aquí</a>. 
+
+La <b>fecha límite es el 14 de marzo a las 21:00</b>. </li>
+
+<LI class="par"><b>26-Febrero-2018.</b> <b>Examen del primer parcial</b>.
+<a href="./AnunciosExams/Dist-P1-1819.pdf">Aquí</a> puede encontrar la
+ distribución de alumnos por aulas de este examen, que se realizará el
+día <b>28 de Febrero a las 15:00 horas</b>.<p></li>
+
+
+<li class="impar"><b>29-Enero-2019.</b> Está disponible la <b>lista de alumnos matriculados
+con alguna parte de la asignatura convalidada</b>. Puede consultar dicha lista
+a través del enlace <a HREF="/cgi-bin/notas.cgi">Calificaciones</a>. Si observa algún error,
+envíe un mensaje a la coordinadora de la asignatura.</li>
+
+<LI class="par"><b>25-Julio-2018.</b> Antes del comienzo de las clases de la
+asignatura se publicará la <b>lista de alumnos con alguna parte de la asignatura
+convalidada</b>.</li>
+
+</ul>
+
+</div> <!-- Fin de Noticias -->
+</div> <!-- Fin de MiPagina -->
+
+</BODY>
+</HTML>
